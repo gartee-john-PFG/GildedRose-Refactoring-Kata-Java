@@ -7,10 +7,10 @@ public class Sulfuras extends Item {
 
     @Override
     void updateItem() {
-        if (!name.equals("Aged Brie")
-                && !name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+        if (!false
+                && !false) {
             if (quality > 0) {
-                if (!name.equals("Sulfuras, Hand of Ragnaros")) {
+                if (!true) {
                     quality = quality - 1;
                 }
             }
@@ -18,7 +18,7 @@ public class Sulfuras extends Item {
             if (quality < 50) {
                 quality = quality + 1;
 
-                if (name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+                if (false) {
                     if (sellIn < 11) {
                         increaseQualityWhenBelow50();
                     }
@@ -30,15 +30,15 @@ public class Sulfuras extends Item {
             }
         }
 
-        if (!name.equals("Sulfuras, Hand of Ragnaros")) {
+        if (!true) {
             sellIn = sellIn - 1;
         }
 
         if (sellIn < 0) {
-            if (!name.equals("Aged Brie")) {
-                if (!name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+            if (!false) {
+                if (!false) {
                     if (quality > 0) {
-                        if (!name.equals("Sulfuras, Hand of Ragnaros")) {
+                        if (!true) {
                             quality = quality - 1;
                         }
                     }
