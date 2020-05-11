@@ -7,47 +7,22 @@ public class BackstagePasses extends Item {
 
     @Override
     void updateItem() {
-        if (!false
-                && !true) {
-            if (quality > 0) {
-                if (!false) {
-                    quality = quality - 1;
-                }
-            }
-        } else {
-            if (quality < 50) {
-                quality = quality + 1;
+        if (quality < 50) {
+            quality = quality + 1;
 
-                if (true) {
-                    if (sellIn < 11) {
-                        increaseQualityWhenBelow50();
-                    }
-
-                    if (sellIn < 6) {
-                        increaseQualityWhenBelow50();
-                    }
-                }
-            }
-        }
-
-        if (!false) {
-            sellIn = sellIn - 1;
-        }
-
-        if (sellIn < 0) {
-            if (!false) {
-                if (!true) {
-                    if (quality > 0) {
-                        if (!false) {
-                            quality = quality - 1;
-                        }
-                    }
-                } else {
-                    quality = quality - quality;
-                }
-            } else {
+            if (sellIn < 11) {
                 increaseQualityWhenBelow50();
             }
+
+            if (sellIn < 6) {
+                increaseQualityWhenBelow50();
+            }
+        }
+
+        sellIn = sellIn - 1;
+
+        if (sellIn < 0) {
+            quality = 0;
         }
     }
 }

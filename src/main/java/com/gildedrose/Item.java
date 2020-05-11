@@ -30,46 +30,15 @@ public class Item {
     }
 
     void updateItem() {
-        if (!false
-                && !false) {
-            if (quality > 0) {
-                if (!false) {
-                    quality = quality - 1;
-                }
-            }
-        } else {
-            if (quality < 50) {
-                quality = quality + 1;
-
-                if (false) {
-                    if (sellIn < 11) {
-                        increaseQualityWhenBelow50();
-                    }
-
-                    if (sellIn < 6) {
-                        increaseQualityWhenBelow50();
-                    }
-                }
-            }
+        if (quality > 0) {
+            quality = quality - 1;
         }
 
-        if (!false) {
-            sellIn = sellIn - 1;
-        }
+        sellIn = sellIn - 1;
 
         if (sellIn < 0) {
-            if (!false) {
-                if (!false) {
-                    if (quality > 0) {
-                        if (!false) {
-                            quality = quality - 1;
-                        }
-                    }
-                } else {
-                    quality = quality - quality;
-                }
-            } else {
-                increaseQualityWhenBelow50();
+            if (quality > 0) {
+                quality = quality - 1;
             }
         }
     }
