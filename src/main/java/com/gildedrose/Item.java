@@ -22,4 +22,10 @@ public class Item {
                 ", quality=" + quality +
                 '}';
     }
+
+    void increaseQualityWhenBelow50() {
+        if (quality < 50) {
+            quality = quality + 1;
+        }
+    }
 }
