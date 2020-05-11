@@ -1,6 +1,5 @@
 package com.gildedrose;
 
-import org.approvaltests.Approvals;
 import org.approvaltests.combinations.CombinationApprovals;
 import org.approvaltests.reporters.QuietReporter;
 import org.approvaltests.reporters.UseReporter;
@@ -26,7 +25,7 @@ class GildedRoseTest {
     private Item runGildedRose(String name, int sellIn, int quality) {
         Item[] items = new Item[] { new Item(name, sellIn, quality) };
         GildedRose gildedRose = new GildedRose(items);
-        gildedRose.updateQuality();
+        gildedRose.updateItems();
         return gildedRose.items[0];
     }
 
