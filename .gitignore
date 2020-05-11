@@ -5,3 +5,17 @@ obj
 vendor
 .idea
 *.iml
+
+.idea/
+*.iml
+target/
+
+.classpath
+.project
+bin/
+.settings/
+
+# Gradle
+.gradle
+/build/
+
